@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: banco_proyecto_development
+  database: db/banco_proyecto_development
   username: postgres
   password: 31000208a
   port: 5432
@@ -63,7 +63,7 @@ test:
   username: postgres
   password: 31000208a
   port: 5432
-  database: banco_proyecto_test
+  database: db/banco_proyecto_test
   
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -87,7 +87,7 @@ test:
 #
 production:
   <<: *default
-  database: banco_proyecto_production
+  database: db/banco_proyecto_production
   username: postgres
   password: 31000208a
   port: 5432
